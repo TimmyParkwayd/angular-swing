@@ -512,7 +512,7 @@ Card.throwOutConfidence = function (offset, element) {
  * @return {Boolean}
  */
 Card.isThrowOut = function (offset, element, throwOutConfidence) {
-    return throwOutConfidence === 1;
+    return throwOutConfidence > 0.2;
 };
 
 /**
